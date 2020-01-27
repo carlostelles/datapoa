@@ -9,11 +9,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {LineTypeModule} from './components/line-type/line-type.module';
 import { LinesComponent } from './pages/lines/lines.component';
 import {AppRoutingModule} from './app.routing';
+import { RoutesComponent } from './pages/routes/routes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LinesComponent
+    LinesComponent,
+    RoutesComponent
   ],
   imports: [
     BrowserModule,

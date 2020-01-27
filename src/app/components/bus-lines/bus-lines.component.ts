@@ -39,7 +39,12 @@ export class BusLinesComponent implements OnChanges {
     this.service.sortDirection = direction;
   }
 
-  onRouteLine(id: string) {
-    this.router.navigate(['lines', id]);
+  onRouteLine(line) {
+    this.router.navigate(['lines', line.id], {
+      queryParams: {
+        codigo: line.codigo,
+        nome: line.nome
+      }
+    });
   }
 }

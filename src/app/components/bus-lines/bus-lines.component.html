@@ -7,7 +7,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let line of lines$ | async" class="pointer" (click)="onRouteLine(line.id)">
+    <tr *ngFor="let line of lines$ | async" class="pointer" (click)="onRouteLine(line)">
       <td>{{line.codigo}}</td>
       <td>{{line.nome}}</td>
     </tr>
