@@ -1,0 +1,7 @@
+<div class="input-group my-3">
+  <input type="text" class="form-control" placeholder="Pesquise sua linha" aria-label="Pesquise sua linha"
+         aria-describedby="basic-addon2" [(ngModel)]="input" (ngModelChange)="onSearch($event)">
+  <div class="input-group-append">
+    <button class="btn btn-outline-primary" type="button" (click)="onSearch(input)">Pesquisar</button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="btn-group w-100 mb-3" role="group" aria-label="Tipo de linha">
+  <button type="button" (click)="onType('o')" class="btn w-50"
+          [ngClass]="{'btn-primary': _type === 'o', 'btn-secondary': _type === 'l'}">Ônibus
+  </button>
+  <button type="button" (click)="onType('l')" class="btn w-50"
+          [ngClass]="{'btn-primary': _type === 'l', 'btn-secondary': _type === 'o'}">Lotação
+  </button>
+</div>
