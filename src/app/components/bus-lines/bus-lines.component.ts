@@ -40,11 +40,6 @@ export class BusLinesComponent implements OnChanges {
   }
 
   onRouteLine(line) {
-    this.router.navigate(['lines', line.id], {
-      queryParams: {
-        codigo: line.codigo,
-        nome: line.nome
-      }
-    });
+    this.router.navigate(['lines', line.id]);
   }
 }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://www.poatransporte.com.br/php/facades/process.php'
+  apiUrl: 'http://www.poatransporte.com.br/php/facades/process.php',
 };
 
 /*

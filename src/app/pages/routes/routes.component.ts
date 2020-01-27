@@ -50,4 +50,11 @@ export class RoutesComponent implements OnInit {
     });
   }
 
+  onMaps(route: { lat: string; lng: string }) {
+    window.open('https://www.google.com/maps/?q=' + route.lat + ',' + route.lng);
+  }
+
+  onBack() {
+    window.history.back();
+  }
 }

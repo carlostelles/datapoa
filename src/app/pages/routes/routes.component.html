@@ -1,1 +1,23 @@
-<p>routes works!</p>
+<div class="row py-2">
+  <div class="col-10">
+    <h1>{{code}} - {{name}}</h1>
+  </div>
+  <div class="col-2 text-right">
+    <button class="btn btn-outline-primary" type="button" (click)="onBack()">Voltar</button>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let route of routes" (click)="onMaps(route)" class="pointer">
+      <td>{{route.lat}}</td>
+      <td>{{route.lng}}</td>
+    </tr>
+  </tbody>
+</table>

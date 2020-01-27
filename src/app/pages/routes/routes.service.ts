@@ -12,7 +12,7 @@ export class RoutesService {
 
   get(id) {
     return this.http.get(environment.apiUrl, {
-      params: { a: 'il', p: id}
+      params: {a: 'il', p: id}
     });
   }
 }
